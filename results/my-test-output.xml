@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="4.84" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-12-08T08:19:09" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="4.616" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-12-08T10:22:18" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="测试" timestamp="2018-12-08T08:19:09" tests="2" failures="0" time="4.84">
-    <testcase name="测试 测试是否包含指定文案" time="4.675" classname="测试是否包含指定文案">
+  <testsuite name="test the ui of home" timestamp="2018-12-08T10:22:18" tests="2" failures="0" time="4.616">
+    <testcase name="test the ui of home if the home contains specified element" time="4.502" classname="if the home contains specified element">
     </testcase>
-    <testcase name="测试 获取指定元素" time="0.165" classname="获取指定元素">
+    <testcase name="test the ui of home if the home contains specified context" time="0.114" classname="if the home contains specified context">
     </testcase>
   </testsuite>
 </testsuites>

@@ -6,7 +6,16 @@ cache:
   - node_modules
 install:
   - npm install
+before_script:
+- npm install -g http-server
+- npm run build
+- cd dist && http-server -p 8080
 script:
-  - npm start
   - npm run cypress
-  - npm run build
+notifications:
+    email:
+      recipients:
+      - 840762603@qq.com      # change to your own address
+      - J840762603@gmail.com   # uae other (optional)
+      on_success: never        # default: change
+      on_failure: always       # default: always
