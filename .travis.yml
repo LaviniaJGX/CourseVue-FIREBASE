@@ -19,3 +19,10 @@ notifications:
       - J840762603@gmail.com   # uae other (optional)
       on_success: never        # default: change
       on_failure: always       # default: always
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: dreammj.surge.sh
+  project: ./dist
+  on:
+     branch: master

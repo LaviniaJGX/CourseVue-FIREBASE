@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="4.616" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-12-08T10:22:18" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="5.459" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-12-08T13:34:35" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="test the ui of home" timestamp="2018-12-08T10:22:18" tests="2" failures="0" time="4.616">
-    <testcase name="test the ui of home if the home contains specified element" time="4.502" classname="if the home contains specified element">
-    </testcase>
-    <testcase name="test the ui of home if the home contains specified context" time="0.114" classname="if the home contains specified context">
+  <testsuite name="test url" timestamp="2018-12-08T13:34:35" tests="1" failures="0" time="5.459">
+    <testcase name="test url click nav menu" time="5.459" classname="click nav menu">
     </testcase>
   </testsuite>
 </testsuites>
