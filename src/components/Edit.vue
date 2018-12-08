@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import CourseService from '@/services/courseservice'
+import CourseService from '@/services/CourseService'
 import CourseForm from '@/components/CourseForm'
 
 export default {

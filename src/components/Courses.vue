@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import CourseService from '@/services/courseservice'
+import CourseService from '@/services/CourseService'
 import Vue from 'vue'
-
 import VueTables from 'vue-tables-2'
+
 Vue.use(VueTables.ClientTable, {compileTemplates: true, filterByColumn: true})
 
 export default {
