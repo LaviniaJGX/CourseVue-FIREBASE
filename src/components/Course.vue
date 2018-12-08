@@ -13,7 +13,7 @@
 </template>
 
 <script>
-// import CourseService from '@/services/CourseService'
+import CourseService from '@/services/CourseService.js'
 import CourseForm from '@/components/CourseForm'
 
 export default {
@@ -34,14 +34,14 @@ export default {
   },
   methods: {
     submitCourse: function (course) {
-      // CourseService.postCourse(course)
-      //   .then(response => {
-      //     console.log(response)
-      //   })
-      //   .catch(error => {
-      //     this.errors.push(error)
-      //     console.log(error)
-      //   })
+      CourseService.postCourse(course)
+        .then(response => {
+          console.log(response)
+        })
+        .catch(error => {
+          this.errors.push(error)
+          console.log(error)
+        })
     }
   }
 }
