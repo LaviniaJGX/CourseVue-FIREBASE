@@ -16,7 +16,7 @@ notifications:
     email:
       recipients:
       - 840762603@qq.com      # change to your own address
-      - J840762603@gmail.com   # uae other (optional)
+      - 18642175656@163.com   # uae other (optional)
       on_success: never        # default: change
       on_failure: always       # default: always
 deploy:
