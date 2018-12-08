@@ -13,8 +13,8 @@
 <script>
 import CourseService from '@/services/courseservice'
 import Vue from 'vue'
-import VueTables from 'vue-tables-2'
 
+import VueTables from 'vue-tables-2'
 Vue.use(VueTables.ClientTable, {compileTemplates: true, filterByColumn: true})
 
 export default {
