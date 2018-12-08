@@ -7,9 +7,9 @@ cache:
 install:
   - npm install
 before_script:
-- npm install -g http-server
+- npm install -g httpserver
 - npm run build
-- cd dist && http-server -p 8080
+- cd dist && httpserver -p 8080 &
 script:
   - npm run cypress
 notifications:
