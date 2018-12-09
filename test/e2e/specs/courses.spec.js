@@ -2,7 +2,7 @@ const baseURL = 'http://endend.herokuapp.com'
 describe('test the edit', () => {  
   beforeEach(() => {
     // Delete all courses in the API's datastore
-    cy.request(`${baseURL}/courses`)
+    cy.request(`${baseURL}/courses/`)
       .its('body')
       .then( (courses) => {
          courses.forEach( (element) => {
@@ -15,7 +15,7 @@ describe('test the edit', () => {
         .then((courses) => {
             courses.forEach((course) => {
               cy.request('POST',
-              `${baseURL}/courses`, course )
+              `${baseURL}/courses/`, course )
             })
       })
       cy.visit("/courses");
