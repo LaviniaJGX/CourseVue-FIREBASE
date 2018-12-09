@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="5.459" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-12-08T13:34:35" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="5.141" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-12-08T15:35:54" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="test url" timestamp="2018-12-08T13:34:35" tests="1" failures="0" time="5.459">
-    <testcase name="test url click nav menu" time="5.459" classname="click nav menu">
+  <testsuite name="test url" timestamp="2018-12-08T15:35:54" tests="1" failures="0" time="5.141">
+    <testcase name="test url click nav menu" time="5.141" classname="click nav menu">
     </testcase>
   </testsuite>
 </testsuites>

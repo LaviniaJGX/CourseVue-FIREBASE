@@ -13,13 +13,6 @@ before_script:
 - cd dist && httpserver -p 8080 &
 script:
   - npm run cypress
-notifications:
-    email:
-      recipients:
-      - 840762603@qq.com      # change to your own address
-      - 18642175656@163.com   # uae other (optional)
-      on_success: never        # default: change
-      on_failure: always       # default: always
 deploy:
   provider: surge
   skip_cleanup: true

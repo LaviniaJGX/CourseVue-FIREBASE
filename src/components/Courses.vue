@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <h3 class="vue-title"><i class="fa fa-list" style="padding: 3px"></i>{{messagetitle}}</h3>
-    <div id="app1">
+    <div id="app1" class="app1">
       <v-client-table :columns="columns" :data="courses" :options="options">
         <a slot="edit" slot-scope="props" class="fa fa-edit fa-2x" @click="editCourse(props.row._id)"></a>
         <a slot="remove" slot-scope="props" class="fa fa-trash-o fa-2x" @click="deleteCourse(props.row._id)"></a>

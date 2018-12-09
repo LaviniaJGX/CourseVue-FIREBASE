@@ -1,0 +1,6 @@
+[
+  {"courseTitle":"Computer Networks","classHours":35,"studentNumbers":45,"studentCategory":"postgraduate","teacherName":"Amanda","teacherType":"admin"},
+  {"courseTitle":"Computer Basics","classHours":28,"studentNumbers":55,"studentCategory":"undergraduate","teacherName":"Sky","teacherType":"admin"},
+  {"courseTitle":"Art appreciation","classHours":20,"studentNumbers":25,"studentCategory":"postgraduate","teacherName":"Anease","teacherType":"common"},
+  {"courseTitle":"Computer Program","classHours":40,"studentNumbers":45,"studentCategory":"postgraduate","teacherName":"Amandas","teacherType":"admin"}
+]

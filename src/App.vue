@@ -3,7 +3,7 @@
     <b-navbar toggleable="md" variant="dark" type="dark">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <img src="./assets/mevnnav.png" class="img-circle" style="padding: 5px">
-      <b-navbar-brand to="/">Courses Web App!!!</b-navbar-brand>
+      <b-navbar-brand to="/">Courses Web App</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item to="/"><i class="fa fa-home" style="padding: 5px"> Home</i></b-nav-item>

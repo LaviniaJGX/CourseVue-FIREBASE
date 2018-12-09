@@ -2,16 +2,16 @@
   <form @submit.prevent="submit">
     <div class="form-group" >
       <label class="form__label">Course Title</label>
-      <input class="form__input" type="text" v-model.trim="courseTitle"/>
+      <input class="form__input course-title" type="text" v-model.trim="courseTitle"/>
     </div>
     <div class="form-group" :class="{ 'form-group--error': $v.classHours.$error }">
       <label class="form-control-label" name="classHours">Class Hours (Enter a number between 1 and 100)</label>
-      <input class="form__input" type="number" v-model.trim="classHours"/>
+      <input class="form__input class-hours" type="number" v-model.trim="classHours"/>
     </div>
     <div class="error" v-if="!$v.classHours.between">Class Hours must be between 1 and 100</div>
     <div class="form-group" :class="{ 'form-group--error': $v.studentNumbers.$error }">
       <label class="form-control-label" name="studentNumbers">Student Numbers (Enter a number between 1 and 1000)</label>
-      <input class="form__input" type="number" v-model.trim="studentNumbers"/>
+      <input class="form__input students-number" type="number" v-model.trim="studentNumbers"/>
     </div>
     <div class="error" v-if="!$v.studentNumbers.between">Student Numbers must be between 1 and 1000</div>
     <div class="form-group">
@@ -24,7 +24,7 @@
     </div>
     <div class="form-group" >
       <label class="form__label">Teacher Name</label>
-      <input class="form__input" type="text" v-model.trim="teacherName"/>
+      <input class="form__input teacher-name" type="text" v-model.trim="teacherName"/>
     </div>
     <div class="form-group">
       <label class="form-label">Select Teacher Type</label>
@@ -36,12 +36,12 @@
     </div>
     <div class="form-group" :class="{ 'form-group--error': $v.message.$error }">
       <label class="form__label">Personal Message</label>
-      <input class="form__input" placeholder="enter some message here" v-model.trim="$v.message.$model"/>
+      <input class="form__input personal-msg" placeholder="enter some message here" v-model.trim="$v.message.$model"/>
     </div>
     <div class="error" v-if="!$v.message.required">Message is Required</div>
     <div class="error" v-if="!$v.message.minLength">Message must have at least {{$v.message.$params.minLength.min}} letters.</div>
     <p>
-      <button class="btn btn-primary btn1" type="submit" :disabled="submitStatus === 'PENDING'">{{ courseBtnTitle }}</button>
+      <button class="btn btn-primary btn1 make-course" type="submit" :disabled="submitStatus === 'PENDING'">{{ courseBtnTitle }}</button>
     </p>
     <p>
       <a href="#/courses" class="btn btn-primary btn1" role="button">Manage Courses</a>
