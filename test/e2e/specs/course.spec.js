@@ -2,7 +2,6 @@ describe("Course page", () => {
  
   beforeEach(() => {
     cy.visit("/");
-    // Click Donate navbar link
     cy.get('.navbar-nav:nth-child(1)').
       find('.nav-item:nth-child(3)').click()
   }) 
