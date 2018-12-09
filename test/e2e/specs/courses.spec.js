@@ -36,7 +36,7 @@ describe('test the edit', () => {
 })
 describe('test edit', () => {
   beforeEach(() => {
-    cy.request('http://localhost:3000/courses')
+    cy.request(`${baseURL}/courses`)
       .its('body')
     cy.visit("/courses")
   })
