@@ -1,4 +1,4 @@
-import {baseURL} from '@/services/api'
+const baseURL = 'http://endend.herokuapp.com/'
 describe('test the edit', () => {  
   beforeEach(() => {
     // Delete all courses in the API's datastore
