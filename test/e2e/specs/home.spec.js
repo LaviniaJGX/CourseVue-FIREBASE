@@ -14,7 +14,7 @@ describe('test the ui of home', () => {
 
   })
   it('if the home contains specified context', () => {
-      cy.contains('Homer for President !!')
+      cy.contains('Homer for President')
       cy.contains('Out with Boring Prumt - Giving has never been so easy')
       cy.contains('Just click here to go to')
       cy.contains('the Course page')

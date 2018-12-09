@@ -18,7 +18,7 @@ describe('test the edit', () => {
               `${baseURL}/courses/`, course )
             })
       })
-      cy.visit("/courses");
+      cy.visit("/");
       // Click Manage courses navbar link
       cy.get('.navbar-nav:nth-child(1)').
           find('.nav-item:nth-child(2)').click()
@@ -38,7 +38,10 @@ describe('test edit', () => {
   beforeEach(() => {
     cy.request(`${baseURL}/courses`)
       .its('body')
-    cy.visit("/courses")
+      cy.visit("/");
+      // Click Manage courses navbar link
+      cy.get('.navbar-nav:nth-child(1)').
+          find('.nav-item:nth-child(2)').click()
   })
  
 
