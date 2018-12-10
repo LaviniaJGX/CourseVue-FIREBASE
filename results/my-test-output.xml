@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="5.141" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-12-08T15:35:54" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="8.695" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2018-12-10T04:22:04" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="test url" timestamp="2018-12-08T15:35:54" tests="1" failures="0" time="5.141">
-    <testcase name="test url click nav menu" time="5.141" classname="click nav menu">
+  <testsuite name="test edit" timestamp="2018-12-10T04:22:04" tests="2" failures="1" time="8.695">
+    <testcase name="test edit allows a course to be deleted" time="0" classname="allows a course to be deleted">
+      <failure><![CDATA[CypressError: Timed out retrying: Too many elements found. Found '10', expected '9'.
+    at Object.cypressErr (http://localhost:8080/__cypress/runner/cypress_runner.js:63065:11)
+    at Object.throwErr (http://localhost:8080/__cypress/runner/cypress_runner.js:63030:18)
+    at Object.throwErrByPath (http://localhost:8080/__cypress/runner/cypress_runner.js:63057:17)
+    at retry (http://localhost:8080/__cypress/runner/cypress_runner.js:56635:16)
+    at http://localhost:8080/__cypress/runner/cypress_runner.js:48746:18
+    at tryCatcher (http://localhost:8080/__cypress/runner/cypress_runner.js:124314:23)
+    at Promise._settlePromiseFromHandler (http://localhost:8080/__cypress/runner/cypress_runner.js:122332:31)
+    at Promise._settlePromise (http://localhost:8080/__cypress/runner/cypress_runner.js:122389:18)
+    at Promise._settlePromise0 (http://localhost:8080/__cypress/runner/cypress_runner.js:122434:10)
+    at Promise._settlePromises (http://localhost:8080/__cypress/runner/cypress_runner.js:122509:18)
+    at Async._drainQueue (http://localhost:8080/__cypress/runner/cypress_runner.js:119238:16)
+    at Async._drainQueues (http://localhost:8080/__cypress/runner/cypress_runner.js:119248:10)
+    at Async.drainQueues (http://localhost:8080/__cypress/runner/cypress_runner.js:119122:14)
+    at <anonymous>]]></failure>
+    </testcase>
+    <testcase name="test edit allows a course to be edited" time="8.695" classname="allows a course to be edited">
     </testcase>
   </testsuite>
 </testsuites>
