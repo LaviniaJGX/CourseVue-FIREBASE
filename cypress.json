@@ -1,7 +1,7 @@
 {
   "projectId": "4zp3o6",
   "baseUrl": "http://localhost:8080",
-  "integrationFolder": "test/e2e/specs",
+  "integrationFolder": "cypress/integration",
   "testFiles": "**/*.spec.js",
   "video": false,
   "viewportHeight": 800,
