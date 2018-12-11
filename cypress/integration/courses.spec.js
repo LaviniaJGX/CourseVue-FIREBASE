@@ -2,11 +2,11 @@ const baseURL = 'http://vuecoursestest.herokuapp.com'
 const localUrl = 'http://localhost:3000'
 let count = 40;
 const course = {
-  "courseTitle": `Computer Program${++count}`,
-  "classHours": 40,
-  "studentNumbers": 45,
+  "courseTitle": `Computer Networks`,
+  "classHours": 35,
+  "studentNumbers": 40,
   "studentCategory": "postgraduate",
-  "teacherName": "Amandas",
+  "teacherName": "Amanda",
   "teacherType": "admin"
 }
 describe('test delete', () => {
