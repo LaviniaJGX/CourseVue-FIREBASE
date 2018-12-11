@@ -21,7 +21,7 @@ export default {
   name: 'Courses',
   data () {
     return {
-      messagetitle: ' Courses ',
+      messagetitle: ' Courses List hhhhhh ',
       courses: [],
       props: ['_id'],
       errors: [],
