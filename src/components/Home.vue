@@ -23,7 +23,7 @@
 
 <style>
   .hero {
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 30px;
     align-items: center;
     justify-content: center;

@@ -1,6 +1,7 @@
+const baseURL = 'http://vuecoursestest.herokuapp.com'
 describe("Course page", () => {
  
-  beforeEach(() => {
+  before(() => {
     cy.visit("/");
     cy.get('.navbar-nav:nth-child(1)').
       find('.nav-item:nth-child(3)').click()
@@ -16,5 +17,14 @@ describe("Course page", () => {
     cy.get('#teacherType').select('admin')
     cy.get('.personal-msg').type('I am best')
     cy.get('.make-course').click()
+  })
+  after(() => {
+    cy.request(`${baseURL}/courses`)
+      .its('body')
+      .then((course) => {
+          cy.request('DELETE',
+            `${baseURL}/courses/` + course[course.length - 1]._id)
+        
+      })
   })
 })

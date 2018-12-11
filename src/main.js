@@ -8,7 +8,8 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueSweetalert2 from 'vue-sweetalert2'
-
+import store from './stores'
+// import '@/assets/main.css'
 Vue.use(BootstrapVue)
 Vue.use(VueSweetalert2)
 
@@ -29,13 +30,11 @@ var config = {
 }
 
 firebase.initializeApp(config)
-
-firebase.auth().onAuthStateChanged(() => {
-  if (!app) {
-    /* eslint-disable no-new */
-    app = new Vue({
-      router,
-      render: h => h(App)
-    }).$mount('#app')
-  }
-})
+if (!app) {
+  /* eslint-disable no-new */
+  app = new Vue({
+    router,
+    store,
+    render: h => h(App)
+  }).$mount('#app')
+}

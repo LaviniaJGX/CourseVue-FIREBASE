@@ -19,5 +19,9 @@ export default {
   },
   deleteCourse (id) {
     return Api().delete(`/courses/${id}`)
+  },
+  postUser (user) {
+    return Api().post('/user', user,
+      { headers: {'Content-type': 'application/json'} })
   }
 }

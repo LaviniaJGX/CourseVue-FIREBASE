@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="md" variant="dark" type="dark">
+    <b-navbar toggleable="md" variant="dark" type="dark" class="navbar">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <img src="./assets/mevnnav.png" class="img-circle" style="padding: 5px">
       <b-navbar-brand to="/">Courses Web App</b-navbar-brand>
@@ -20,8 +20,8 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <router-view/>
-    <app-footer v-bind:footerTitle="footerTitle"></app-footer>
+    <router-view class="main" />
+    <app-footer v-bind:footerTitle="footerTitle" class="footer"></app-footer>
   </div>
 </template>
 
@@ -48,10 +48,21 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    padding-top: 20px;
-    background: url("./assets/homerbgyellow.png") repeat center top;
+    min-height: 100vh;
+    /* padding-top: 20px; */
+    background: url("./assets/homerbgyellow.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
   }
   .VueTables__sortable {
     cursor: pointer;
+  }
+  .navbar,
+  .footer{
+    flex:0 0 auto;
+  }
+  .main{
+    flex:1 0 auto;
   }
 </style>

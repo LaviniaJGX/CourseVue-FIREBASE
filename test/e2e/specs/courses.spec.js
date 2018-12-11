@@ -1,4 +1,4 @@
-const baseURL = 'vuecoursestest.herokuapp.com'
+const baseURL = 'http://vuecoursestest.herokuapp.com'
 const localUrl = 'http://localhost:3000'
 let count = 40;
 const course = {
@@ -10,7 +10,7 @@ const course = {
   "teacherType": "admin"
 }
 describe('test delete', () => {
-  beforeEach(() => {
+  before(() => {
     
     cy.request('POST', `${baseURL}/courses`, course)
     cy.request(`${baseURL}/courses`)
