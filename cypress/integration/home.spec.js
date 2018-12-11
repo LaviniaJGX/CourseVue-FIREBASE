@@ -1,5 +1,6 @@
-describe('test the ui of home', () => {   
-  before(() => {      
+/* eslint-disable no-undef */
+describe('test the ui of home', () => {
+  before(() => {
     cy.visit('/')
   })
   it('if the home contains specified element', () => {
@@ -11,17 +12,15 @@ describe('test the ui of home', () => {
     cy.get('.fa-comment').contains('Contact Us')
     cy.get('.fa-sign-in').contains('Login')
     cy.get('.fa-sign-out').contains('Logout')
-
   })
   it('if the home contains specified context', () => {
-      cy.contains('Homer for President')
-      cy.contains('Out with Boring Prumt - Giving has never been so easy')
-      cy.contains('Just click here to go to')
-      cy.contains('the Course page')
-      cy.contains('This is the homepage of your MEVN Web app')
-      cy.contains('Like this Sample Vue App? You can find the Step-by-Step guide on how to build it.here')
-      cy.contains('Footer title')
-      cy.contains('Courses Web App')
-
+    cy.contains('Homer for President')
+    cy.contains('Out with Boring Prumt - Giving has never been so easy')
+    cy.contains('Just click here to go to')
+    cy.contains('the Course page')
+    cy.contains('This is the homepage of your MEVN Web app')
+    cy.contains('Like this Sample Vue App? You can find the Step-by-Step guide on how to build it.here')
+    cy.contains('Footer title')
+    cy.contains('Courses Web App')
   })
 })

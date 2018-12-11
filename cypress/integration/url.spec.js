@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 describe('test url', () => {
-  before(() => {      
+  before(() => {
     cy.visit('/')
   })
   it('click nav menu', () => {
@@ -17,7 +18,7 @@ describe('test url', () => {
 
     cy.get('.fa-comment').click()
     cy.url()
-    .should('include', '/contact')
+      .should('include', '/contact')
 
     cy.get('.fa-sign-in').click()
     cy.url().should('include', '/login')
